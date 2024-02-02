@@ -4,15 +4,17 @@ Welcome to the KATA BANK application! This documentation provides a comprehensiv
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
-2. [Client Operations](#client-operations)
+2. [Bank Admin Operations](#bank-admin-operations)
+   - [Client List](#client-list)
+   - [Create Client](#create-client)
+   - [Multi-Criteria Search](#multi-criteria-search)
+   - [Batch Processing](#batch-processing)
+3. [Client Operations](#client-operations)
    - [Deposit](#deposit)
    - [Withdrawal](#withdrawal)
    - [Account Statement](#account-statement)
    - [Add Account](#add-account)
-3. [Bank Admin Operations](#bank-admin-operations)
-   - [Client List](#client-list)
-   - [Multi-Criteria Search](#multi-criteria-search)
-   - [Batch Processing](#batch-processing)
+
 
 ## 1. Getting Started <a name="getting-started"></a>
 
