@@ -26,6 +26,8 @@ If you already have Java 17 installed, you can clone the repository, build the a
       ./mvnw clean install
       java -jar target/kata-bank-0.0.1-SNAPSHOT.jar
 
+**Note:** You can authenticate your request by user the default admin user 'Oussema' (username = ossema.abdennadher@gmail.com & password = admin) 
+
 ### Importing Postman Requests
 1. Download and install [Postman](https://www.postman.com/).
 2. Import the provided Postman collection: [KATA BANK Postman Collection](path/to/your/KATA_BANK_Postman_Collection.json).
