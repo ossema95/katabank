@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "2e9dd231-6ff4-4f66-a8ac-a4e85c71661d",
+		"name": "Clients Management (admin)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10063110"
+	},
+	"item": [
+		{
+			"name": "find all clients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ossema.abdennadher@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clients/find",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find client with criteria",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ossema.abdennadher@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clients/find?fullName=like(Jied)&email=notequal(somesomeFake@email.com)",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"find"
+					],
+					"query": [
+						{
+							"key": "fullName",
+							"value": "like(Jied)"
+						},
+						{
+							"key": "email",
+							"value": "notequal(somesomeFake@email.com)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ossema.abdennadher@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 101,\r\n    \"email\": \"test1@test.com\",\r\n    \"fullName\": \"Test Test\",\r\n    \"password\": \"test123\",\r\n    \"roles\": [\r\n        \"CLIENT\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clients/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Clients (batch)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ossema.abdennadher@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oabdenadher/Documents/kata-bank/clients-upload.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/clients/batch/start",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"batch",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
