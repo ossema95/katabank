@@ -17,6 +17,14 @@ Welcome to the KATA BANK application! This documentation provides a comprehensiv
 
 
 ## 1. Getting Started <a name="getting-started"></a>
+### Running the Application
+If you already have Java 17 installed, you can clone the repository, build the application, and run it as a regular JAR file.
+
+```bash
+git clone [repository-url]
+cd katabank
+./mvnw clean install
+java -jar target/kata-bank-0.0.1-SNAPSHOT.jar
 
 ### Importing Postman Requests
 1. Download and install [Postman](https://www.postman.com/).
