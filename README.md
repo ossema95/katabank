@@ -20,7 +20,7 @@ Welcome to the KATA BANK application! This documentation provides a comprehensiv
 ### Running the Application
 If you already have Java 17 installed, you can clone the repository, build the application, and run it as a regular JAR file.
 
-    ```bash
+   ```bash
    git clone [repository-url]
    cd katabank
    ./mvnw clean install
