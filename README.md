@@ -82,40 +82,45 @@ I want to see the client list with their information based on a multi-criteria s
       "email": "john@example.com"
     }
   }
-3. Bank Admin Operations <a name="bank-admin-operations"></a>
-3.1 Client List <a name="client-list"></a>
-User Story (US-4):
-In order to check the list of clients
-As a bank Admin
-I want to see the client list with their information
+## 3. Bank Admin Operations <a name="bank-admin-operations"></a>
 
-Request:
-Endpoint: /clients
-Method: GET
-3.2 Multi-Criteria Search <a name="multi-criteria-search"></a>
-User Story (US-5):
-In order to search the list of clients
-As a bank Admin
-I want to see the client list with their information based on a multi-criteria search
+### 3.1 Client List <a name="client-list"></a>
+**User Story (US-4):**  
+_In order to check the list of clients  
+As a bank Admin  
+I want to see the client list with their information_
 
-Request:
-Endpoint: /clients/search
-Method: GET
-Parameters (query parameters):
-fullName: Specify the full name for the search.
-email: Specify the email for the search.
-3.3 Batch Processing <a name="batch-processing"></a>
-User Story (New Feature):
-In order to efficiently handle client data
-As a bank Admin
-I want to execute a batch process to import client information from a file
+#### Request:
+- **Endpoint:** `/clients`
+- **Method:** `GET`
 
-Request:
-Endpoint: /clients/batch/start
-Method: POST
-Parameters (form-data):
-file: Attach the file containing client data (CSV format).
-Conclusion
-Congratulations! You've successfully learned how to interact with the KATA BANK application using Postman. Feel free to explore additional features and functionalities based on your needs. If you encounter any issues or have further questions, please refer to the application's documentation or contact the support team.
+### 3.2 Multi-Criteria Search <a name="multi-criteria-search"></a>
+**User Story (US-5):**  
+_In order to search the list of clients  
+As a bank Admin  
+I want to see the client list with their information based on a multi-criteria search_
+
+#### Request:
+- **Endpoint:** `/clients/search`
+- **Method:** `GET`
+- **Parameters (query parameters):**
+  - `fullName`: Specify the full name for the search.
+  - `email`: Specify the email for the search.
+
+### 3.3 Batch Processing <a name="batch-processing"></a>
+**User Story (Batch Processing):**  
+_In order to efficiently process client data  
+As a bank Admin  
+I want to execute a batch job to handle client information in bulk_
+
+#### Request:
+- **Endpoint:** `/clients/batch/start`
+- **Method:** `POST`
+- **Parameters (form-data):**
+  - `file`: Upload a CSV file containing client data.
+
+## Conclusion
+
+Congratulations! You've successfully learned how to interact with the KATA BANK application using Postman in the Bank Admin Operations section. Feel free to explore additional features and functionalities based on your needs. If you encounter any issues or have further questions, please refer to the application's documentation or contact the support team.
 
 Happy banking with KATA BANK! 🏦✨
